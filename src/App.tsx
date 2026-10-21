@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import {
-  ArrowDownRight, ArrowRight, ArrowUpRight, Award, BookOpen, BriefcaseBusiness,
-  CheckCircle2, Code2, Database, Download, ExternalLink, Github, GraduationCap,
-  Linkedin, Mail, MapPin, Menu, Monitor, Send, Sparkles, Trophy, X, Terminal,
+  ArrowDownRight, ArrowUpRight, Award, BookOpen, BriefcaseBusiness,
+  CheckCircle2, Code2, Database, Download, GraduationCap,
+  Linkedin, Mail, MapPin, Menu, Monitor, Sparkles, Trophy, X, Terminal,
   Workflow, Layers3, CalendarDays, Phone, Heart, FileCode2
 } from 'lucide-react'
 import SectionHeading from './components/SectionHeading'
@@ -39,7 +39,6 @@ const navLinks = [
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
-  const [formSent, setFormSent] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
